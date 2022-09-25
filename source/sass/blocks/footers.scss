@@ -9,7 +9,7 @@
 			justify-content: flex-start;
 			padding: 20px 0 35px 0;
 			border-bottom: 1px solid $color-dark-gray;
-			@include viewport--1023 {
+			@include vp-1023 {
 				justify-content: center;
 				flex-direction: column;
 			}
@@ -17,7 +17,7 @@
 				padding: 0 10px;
 				&--left {
 					flex: 0 0 440px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						width: 100%;
 						flex: auto;
 						margin: 0 0 20px 0;
@@ -25,7 +25,7 @@
 				}
 				&--right {
 					flex: 1 1 auto;
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 					}
@@ -55,7 +55,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -63,7 +63,7 @@
 				width: 100%;
 				height: 100%;
 				display: flex;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -75,7 +75,7 @@
 				border-radius: 5px 0px 0px 5px;
 				padding: 10px 20px;
 				color: $color-default-white;
-				@include viewport--425 {
+				@include vp-424 {
 					border-radius: 5px;
 					margin-bottom: 20px;
 				}
@@ -97,7 +97,7 @@
 				font-size: 16px;
 				line-height: 19px;
 				color: $color-default-black;
-				@include viewport--425 {
+				@include vp-424 {
 					width: 100%;
 					padding: 10px;
 					border-radius: 5px;
@@ -113,7 +113,7 @@
 				}
 				&--middle {
 					padding: 35px 0 74px 0;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding: 35px 0;
 					}
 				}
@@ -125,7 +125,7 @@
 				display: grid;
 				grid-template-columns: repeat(6, 1fr);
 				grid-column-gap: 30px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					display: flex;
 					flex-direction: column;
 				}
@@ -134,7 +134,7 @@
 				&-accordion-btn {
 					position: relative;
 					pointer-events: none;
-					@include viewport--1023 {
+					@include vp-1023 {
 						pointer-events: all;
 						cursor: pointer;
 						width: 100%;
@@ -152,7 +152,7 @@
 							right: 8px;
 							background-color: $color-default-white;
 							transition: $default-transition-settings;
-							@include viewport--1023 {
+							@include vp-1023 {
 								visibility: visible;
 								opacity: 1;
 							}
@@ -187,7 +187,7 @@
 					padding: 0;
 					margin: 0;
 					min-height: 100%;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding-left: 20px;
 						&--contacts {
 							padding-left: 0;
@@ -227,13 +227,13 @@
 					&:hover {
 						opacity: 0.8;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin: 0 0 20px;
 					}
 				}
 				&.col-02 {
 					margin-left: -40px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 					}
 				}
@@ -244,7 +244,7 @@
 					.footer__col-heading {
 						margin: 0 0 30px;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 						margin-top: 15px;
 						padding-top: 35px;
@@ -258,13 +258,13 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: flex-end;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column-reverse;
 					align-items: flex-start;
 				}
 				&-wrapper {
 					flex: 1 1 auto;
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 						&:last-child {
@@ -277,7 +277,7 @@
 			&__policy {
 				display: flex;
 				justify-content: flex-start;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 					margin-top: 35px;
 				}
@@ -289,8 +289,8 @@
 				color: $color-default-white;
 				text-transform: uppercase;
 				margin-right: 60px;
-				@include viewport--1023 {
-					@include viewport--1023 {
+				@include vp-1023 {
+					@include vp-1023 {
 						margin-bottom: 20px;
 					}
 				}
@@ -307,7 +307,7 @@
 				margin: -10px;
 				max-width: 70%;
 				margin-left: auto;
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 100%;
 					margin-left: 0;
 					justify-content: flex-start;
@@ -320,7 +320,7 @@
 					padding: 10px;
 					background-repeat: no-repeat;
 					background-position: center;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-right: 15px;
 						margin-bottom: 15px;
 					}
@@ -360,7 +360,7 @@
 			justify-content: flex-start;
 			padding: 20px 0 35px 0;
 			border-bottom: 1px solid $color-dark-gray;
-			@include viewport--1023 {
+			@include vp-1023 {
 				justify-content: center;
 				flex-direction: column;
 			}
@@ -368,7 +368,7 @@
 				padding: 0 10px;
 				&--left {
 					flex: 0 0 440px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						width: 100%;
 						flex: auto;
 						margin: 0 0 20px 0;
@@ -376,7 +376,7 @@
 				}
 				&--right {
 					flex: 1 1 auto;
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 					}
@@ -406,7 +406,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -414,7 +414,7 @@
 				width: 100%;
 				height: 100%;
 				display: flex;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -426,7 +426,7 @@
 				border-radius: 5px 0px 0px 5px;
 				padding: 10px 20px;
 				color: $color-night-rider;
-				@include viewport--425 {
+				@include vp-424 {
 					border-radius: 5px;
 					margin-bottom: 20px;
 				}
@@ -448,7 +448,7 @@
 				font-size: 16px;
 				line-height: 19px;
 				color: $color-night-rider;
-				@include viewport--425 {
+				@include vp-424 {
 					width: 100%;
 					padding: 10px;
 					border-radius: 5px;
@@ -464,7 +464,7 @@
 				}
 				&--middle {
 					padding: 35px 0 74px 0;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding: 35px 0;
 					}
 				}
@@ -476,7 +476,7 @@
 				display: grid;
 				grid-template-columns: repeat(6, 1fr);
 				grid-column-gap: 30px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					display: flex;
 					flex-direction: column;
 				}
@@ -485,7 +485,7 @@
 				&-accordion-btn {
 					position: relative;
 					pointer-events: none;
-					@include viewport--1023 {
+					@include vp-1023 {
 						pointer-events: all;
 						cursor: pointer;
 						width: 100%;
@@ -503,7 +503,7 @@
 							right: 8px;
 							background-color: $color-night-rider;
 							transition: $default-transition-settings;
-							@include viewport--1023 {
+							@include vp-1023 {
 								visibility: visible;
 								opacity: 1;
 							}
@@ -538,7 +538,7 @@
 					padding: 0;
 					margin: 0;
 					min-height: 100%;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding-left: 20px;
 						&--contacts {
 							padding-left: 0;
@@ -578,13 +578,13 @@
 					&:hover {
 						opacity: 0.8;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin: 0 0 20px;
 					}
 				}
 				&.col-02 {
 					margin-left: -40px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 					}
 				}
@@ -595,7 +595,7 @@
 					.footer__col-heading {
 						margin: 0 0 30px;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 						margin-top: 15px;
 						padding-top: 35px;
@@ -609,13 +609,13 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: flex-end;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column-reverse;
 					align-items: flex-start;
 				}
 				&-wrapper {
 					flex: 1 1 auto;
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 						&:last-child {
@@ -628,7 +628,7 @@
 			&__policy {
 				display: flex;
 				justify-content: flex-start;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 					margin-top: 35px;
 				}
@@ -640,8 +640,8 @@
 				color: $color-night-rider;
 				text-transform: uppercase;
 				margin-right: 60px;
-				@include viewport--1023 {
-					@include viewport--1023 {
+				@include vp-1023 {
+					@include vp-1023 {
 						margin-bottom: 20px;
 					}
 				}
@@ -658,7 +658,7 @@
 				margin: -10px;
 				max-width: 70%;
 				margin-left: auto;
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 100%;
 					margin-left: 0;
 					justify-content: flex-start;
@@ -671,7 +671,7 @@
 					padding: 10px;
 					background-repeat: no-repeat;
 					background-position: center;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-right: 15px;
 						margin-bottom: 15px;
 					}
@@ -706,13 +706,13 @@
 	&--version03 {
 		background: $color-black-russian;
 		.subscribe-block {
-			@include viewport--1023 {
+			@include vp-1023 {
 				margin-top: 20px;
 				padding-top: 20px;
 				border-top: 1px solid #a6a6a6;
 			}
 			&__wrapper {
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 400px;
 				}
 			}	
@@ -735,7 +735,7 @@
 				align-items: center;
 				justify-content: flex-start;
 				position: relative;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -790,7 +790,7 @@
 				}
 				&--middle {
 					padding: 35px 0 74px 0;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding: 35px 0;
 					}
 				}
@@ -802,7 +802,7 @@
 				display: grid;
 				grid-template-columns: repeat(6, 1fr);
 				grid-column-gap: 30px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					display: flex;
 					flex-direction: column;
 				}
@@ -811,7 +811,7 @@
 				&-accordion-btn {
 					position: relative;
 					pointer-events: none;
-					@include viewport--1023 {
+					@include vp-1023 {
 						pointer-events: all;
 						cursor: pointer;
 						width: 100%;
@@ -829,7 +829,7 @@
 							right: 8px;
 							background-color: $color-default-white;
 							transition: $default-transition-settings;
-							@include viewport--1023 {
+							@include vp-1023 {
 								visibility: visible;
 								opacity: 1;
 							}
@@ -864,7 +864,7 @@
 					padding: 0;
 					margin: 0;
 					min-height: 100%;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding-left: 20px;
 						&--contacts {
 							padding-left: 0;
@@ -904,25 +904,25 @@
 					&:hover {
 						opacity: 0.8;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin: 0 0 20px;
 					}
 				}
 				&.col-02 {
 					margin-left: -35px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 					}
 				}
 				&.col-03 {
 					margin-left: -15px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 					}
 				}
 				&.col-04 {
 					width: 270px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						width: 100%;
 					}
 				}
@@ -933,7 +933,7 @@
 					.footer__col-heading {
 						margin: 0 0 30px;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 						margin-top: 15px;
 						padding-top: 35px;
@@ -945,7 +945,7 @@
 			&__social-wrapper {
 				width: 100%;
 				margin: 40px 0 0;
-				@include viewport--1023 {
+				@include vp-1023 {
 				}
 			}
 			&__social-title {
@@ -956,7 +956,7 @@
 			&__policy {
 				display: flex;
 				justify-content: flex-start;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 					margin-top: 35px;
 				}
@@ -968,8 +968,8 @@
 				color: $color-default-white;
 				text-transform: uppercase;
 				margin-right: 60px;
-				@include viewport--1023 {
-					@include viewport--1023 {
+				@include vp-1023 {
+					@include vp-1023 {
 						margin-bottom: 20px;
 					}
 				}
@@ -985,7 +985,7 @@
 				grid-template-columns: repeat(4, 1fr);
 				grid-template-rows: repeat(2, 1fr);
 				grid-gap: 20px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					grid-gap: 0;
 					max-width: 400px;
 				}
@@ -1002,7 +1002,7 @@
 					padding: 10px;
 					background-repeat: no-repeat;
 					background-position: center;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-right: 15px;
 						margin-bottom: 15px;
 					}
@@ -1037,13 +1037,13 @@
 	&--version04 {
 		background: $color-light-grey;
 		.subscribe-block {
-			@include viewport--1023 {
+			@include vp-1023 {
 				margin-top: 20px;
 				padding-top: 20px;
 				border-top: 1px solid #a6a6a6;
 			}
 			&__wrapper {
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 400px;
 				}
 			}
@@ -1066,7 +1066,7 @@
 				align-items: center;
 				justify-content: flex-start;
 				position: relative;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -1121,7 +1121,7 @@
 				}
 				&--middle {
 					padding: 35px 0 74px 0;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding: 35px 0;
 					}
 				}
@@ -1133,7 +1133,7 @@
 				display: grid;
 				grid-template-columns: repeat(6, 1fr);
 				grid-column-gap: 30px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					display: flex;
 					flex-direction: column;
 				}
@@ -1142,7 +1142,7 @@
 				&-accordion-btn {
 					position: relative;
 					pointer-events: none;
-					@include viewport--1023 {
+					@include vp-1023 {
 						pointer-events: all;
 						cursor: pointer;
 						width: 100%;
@@ -1160,7 +1160,7 @@
 							right: 8px;
 							background-color: $color-night-rider;
 							transition: $default-transition-settings;
-							@include viewport--1023 {
+							@include vp-1023 {
 								visibility: visible;
 								opacity: 1;
 							}
@@ -1195,7 +1195,7 @@
 					padding: 0;
 					margin: 0;
 					min-height: 100%;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding-left: 20px;
 						&--contacts {
 							padding-left: 0;
@@ -1235,25 +1235,25 @@
 					&:hover {
 						opacity: 0.8;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin: 0 0 20px;
 					}
 				}
 				&.col-02 {
 					margin-left: -35px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 					}
 				}
 				&.col-03 {
 					margin-left: -15px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 					}
 				}
 				&.col-04 {
 					width: 270px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						width: 100%;
 					}
 				}
@@ -1264,7 +1264,7 @@
 					.footer__col-heading {
 						margin: 0 0 30px;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-left: 0;
 						margin-top: 15px;
 						padding-top: 35px;
@@ -1276,7 +1276,7 @@
 			&__social-wrapper {
 				width: 100%;
 				margin: 40px 0 0;
-				@include viewport--1023 {
+				@include vp-1023 {
 				}
 			}
 			&__social-title {
@@ -1287,7 +1287,7 @@
 			&__policy {
 				display: flex;
 				justify-content: flex-start;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 					margin-top: 35px;
 				}
@@ -1299,8 +1299,8 @@
 				color: $color-night-rider;
 				text-transform: uppercase;
 				margin-right: 60px;
-				@include viewport--1023 {
-					@include viewport--1023 {
+				@include vp-1023 {
+					@include vp-1023 {
 						margin-bottom: 20px;
 					}
 				}
@@ -1316,7 +1316,7 @@
 				grid-template-columns: repeat(4, 1fr);
 				grid-template-rows: repeat(2, 1fr);
 				grid-gap: 20px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					grid-gap: 0;
 					max-width: 400px;
 				}
@@ -1333,7 +1333,7 @@
 					padding: 10px;
 					background-repeat: no-repeat;
 					background-position: center;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-right: 15px;
 						margin-bottom: 15px;
 					}
@@ -1368,12 +1368,12 @@
 	&--version05 {
 		background: $color-black-russian;
 		.subscribe-block {
-			@include viewport--1023 {
+			@include vp-1023 {
 				padding-top: 20px;
 				border-top: 1px solid #a6a6a6;
 			}
 			&__wrapper {
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 400px;
 				}
 			}
@@ -1396,7 +1396,7 @@
 				align-items: center;
 				justify-content: flex-start;
 				position: relative;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -1451,7 +1451,7 @@
 				}
 				&--middle {
 					padding: 35px 0 74px 0;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding: 35px 0;
 					}
 				}
@@ -1464,7 +1464,7 @@
 				align-items: flex-start;
 				justify-content: space-between;
 				border-bottom: 1px solid $color-nobel;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 				}
 			}
@@ -1482,7 +1482,7 @@
 					padding: 0;
 					margin: 0;
 					min-height: 100%;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding-left: 20px;
 						&--contacts {
 							padding-left: 0;
@@ -1522,19 +1522,19 @@
 					&:hover {
 						opacity: 0.8;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin: 0 0 20px;
 					}
 				}
 				&.col-02 {
 					flex: 0 0 340px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 					}
 				}
 				&.col-03 {
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 					}
@@ -1543,7 +1543,7 @@
 			}
 			&__social-wrapper {
 				width: 100%;
-				@include viewport--1023 {
+				@include vp-1023 {
 					margin: 35px 0 0;
 					padding: 35px 0 0;
 					border-top: 1px solid $color-nobel;
@@ -1557,7 +1557,7 @@
 			&__policy {
 				display: flex;
 				justify-content: flex-start;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 					margin-top: 35px;
 				}
@@ -1569,8 +1569,8 @@
 				color: $color-default-white;
 				text-transform: uppercase;
 				margin-right: 60px;
-				@include viewport--1023 {
-					@include viewport--1023 {
+				@include vp-1023 {
+					@include vp-1023 {
 						margin-bottom: 20px;
 					}
 				}
@@ -1586,7 +1586,7 @@
 				grid-template-columns: repeat(4, 1fr);
 				grid-template-rows: repeat(2, 1fr);
 				grid-gap: 20px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 400px;
 					grid-gap: 0;
 				}
@@ -1603,7 +1603,7 @@
 					padding: 10px;
 					background-repeat: no-repeat;
 					background-position: center;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-right: 15px;
 						margin-bottom: 15px;
 					}
@@ -1638,12 +1638,12 @@
 	&--version06 {
 		background: $color-light-grey;
 		.subscribe-block {
-			@include viewport--1023 {
+			@include vp-1023 {
 				padding-top: 20px;
 				border-top: 1px solid #a6a6a6;
 			}
 			&__wrapper {
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 400px;
 				}
 			}
@@ -1666,7 +1666,7 @@
 				align-items: center;
 				justify-content: flex-start;
 				position: relative;
-				@include viewport--425 {
+				@include vp-424 {
 					flex-direction: column;
 				}
 			}
@@ -1710,7 +1710,7 @@
 					right: 11px;
 					transform: translateY(-50%);
 					pointer-events: none;
-					// @include viewport--425 {
+					// @include vp-424 {
 					// 	top: 72px;
 					// 	right: 50%;
 					// 	transform: translateX(50%);
@@ -1726,7 +1726,7 @@
 				}
 				&--middle {
 					padding: 35px 0 74px 0;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding: 35px 0;
 					}
 				}
@@ -1739,7 +1739,7 @@
 				align-items: flex-start;
 				justify-content: space-between;
 				border-bottom: 1px solid $color-nobel;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 				}
 			}
@@ -1757,7 +1757,7 @@
 					padding: 0;
 					margin: 0;
 					min-height: 100%;
-					@include viewport--1023 {
+					@include vp-1023 {
 						padding-left: 20px;
 						&--contacts {
 							padding-left: 0;
@@ -1797,19 +1797,19 @@
 					&:hover {
 						opacity: 0.8;
 					}
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin: 0 0 20px;
 					}
 				}
 				&.col-02 {
 					flex: 0 0 340px;
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 					}
 				}
 				&.col-03 {
-					@include viewport--1023 {
+					@include vp-1023 {
 						flex: auto;
 						width: 100%;
 					}
@@ -1818,7 +1818,7 @@
 			}
 			&__social-wrapper {
 				width: 100%;
-				@include viewport--1023 {
+				@include vp-1023 {
 					margin: 35px 0 0;
 					padding: 35px 0 0;
 					border-top: 1px solid $color-nobel;
@@ -1832,7 +1832,7 @@
 			&__policy {
 				display: flex;
 				justify-content: flex-start;
-				@include viewport--1023 {
+				@include vp-1023 {
 					flex-direction: column;
 					margin-top: 35px;
 				}
@@ -1844,8 +1844,8 @@
 				color: $color-night-rider;
 				text-transform: uppercase;
 				margin-right: 60px;
-				@include viewport--1023 {
-					@include viewport--1023 {
+				@include vp-1023 {
+					@include vp-1023 {
 						margin-bottom: 20px;
 					}
 				}
@@ -1861,7 +1861,7 @@
 				grid-template-columns: repeat(4, 1fr);
 				grid-template-rows: repeat(2, 1fr);
 				grid-gap: 20px;
-				@include viewport--1023 {
+				@include vp-1023 {
 					max-width: 400px;
 					grid-gap: 0;
 				}
@@ -1878,7 +1878,7 @@
 					padding: 10px;
 					background-repeat: no-repeat;
 					background-position: center;
-					@include viewport--1023 {
+					@include vp-1023 {
 						margin-right: 15px;
 						margin-bottom: 15px;
 					}

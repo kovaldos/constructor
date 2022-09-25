@@ -4,9 +4,14 @@
 
 // Colors
 
+// Default
+
 $color-default-black:             #000000;
-$color-black-russian:             #1C1C1D;
 $color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+
+$color-black-russian:             #1C1C1D;
 $color-jade:                      #00B76C;
 $color-grey:                      #818181;
 $color-dim-gray:                  #6B6868;
@@ -21,6 +26,7 @@ $color-nobel:                     #959595;
 $color-tomato:                    #FF5656;
 $color-white-smoke:               #F3F3F3;
 $color-silver:                    #BBBBBB;
+
 
 
 
@@ -39,8 +45,30 @@ $default-transition-settings:       0.3s ease 0s;
 $modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
 
 // Viewports
-//---------------------------------
+// ---------------------------------
 
 $startWidth: 1920;
 $midWidth: 768;
 $endWidth: 320;
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-425:                            425px;
+$vp-640:                            640px;
+$vp-768:                            768px;
+$vp-951:                            951px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1600:                           1600px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
+
+// Other
+
+$headerHeight: 80px;
+$headerMobHeight: 80px;

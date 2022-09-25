@@ -45,4 +45,19 @@
   &--prev {
     transform: rotate(180deg);
   }
+  &--reset {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    min-width: initial;
+    min-height: initial;
+    border-radius: 0;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }

@@ -12,13 +12,13 @@
       border-radius: 5px;
     }
 
-    @include viewport--1023 {
+    @include vp-1023 {
       .partners__list {
         gap: 20px;
       }
     }
 
-    @include viewport--767 {
+    @include vp-767 {
       .partners__list-item {
         padding: 20px;
       }
@@ -40,7 +40,7 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
 
-  @include viewport--1023 {
+  @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
   }

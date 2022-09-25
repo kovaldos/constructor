@@ -10,6 +10,7 @@ import {modalLoginInit} from './blocks/modal-login';
 import {modalRegistrationInit} from './blocks/modal-registration';
 import {initCustomSelect} from './modules/custom-select';
 import {initAccordions} from './modules/init-accordion';
+import {initBurgerMenu} from './blocks/burger-menu';
 
 
 // Utils
@@ -26,6 +27,7 @@ initAccordions();
 
 // Blocks
 
+initBurgerMenu();
 bannerSlider();
 portfolioSlider();
 modalFeedbackInit();

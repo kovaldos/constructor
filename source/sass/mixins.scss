@@ -4,59 +4,107 @@
   }
 }
 
-@mixin viewport--1919 {
-  @media (max-width: 1919px) {
+// Desktop first
+
+@mixin vp-1919 {
+  @media (max-width: $vp-1920 - 1) {
     @content;
   }
 }
 
-@mixin viewport--1440 {
-  @media (max-width: 1440px) {
+@mixin vp-1599 {
+  @media (max-width: $vp-1600 - 1) {
     @content;
   }
 }
 
-@mixin viewport--1439 {
-  @media (max-width: 1439px) {
+@mixin vp-1439 {
+  @media (max-width: $vp-1440 - 1) {
     @content;
   }
 }
 
-@mixin viewport--1365 {
-  @media (max-width: 1365px) {
+@mixin vp-1279 {
+  @media (max-width: $vp-1280 - 1) {
     @content;
   }
 }
 
-@mixin viewport--1279 {
-  @media (max-width: 1279px) {
+@mixin vp-1023 {
+  @media (max-width: $vp-1024 - 1) {
     @content;
   }
 }
 
-@mixin viewport--1023 {
-  @media (max-width: 1023px) {
+@mixin vp-950 {
+  @media (max-width: $vp-951 - 1) {
     @content;
   }
 }
 
-@mixin viewport--767 {
-  @media (max-width: 767px) {
+@mixin vp-767 {
+  @media (max-width: $vp-768 - 1) {
     @content;
   }
 }
 
-@mixin viewport--425 {
-  @media (max-width: 425px) {
+@mixin vp-639 {
+  @media (max-width: $vp-768 - 1) {
     @content;
   }
 }
 
-@mixin viewport--374 {
-  @media (max-width: 374px) {
+@mixin vp-424 {
+  @media (max-width: $vp-640 - 1) {
     @content;
   }
 }
+
+@mixin vp-374 {
+  @media (max-width: $vp-375 - 1) {
+    @content;
+  }
+}
+
+// Mobile first
+
+// @mixin vp-375 {
+//   @media (min-width: $vp-375) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-768 {
+//   @media (min-width: $vp-768) {
+//     @content;
+//   }
+// }
+
+@mixin vp-1024 {
+  @media (min-width: $vp-1024) {
+    @content;
+  }
+}
+
+@mixin vp-1280 {
+  @media (min-width: $vp-1280) {
+    @content;
+  }
+}
+
+// @mixin vp-1440 {
+//   @media (min-width: $vp-1440) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-1920 {
+//   @media (min-width: $vp-1920) {
+//     @content;
+//   }
+// }
+
+// ---------------------------------
 
 @mixin adaptiveFull($property, $startSize, $midSize, $endSize) {
   $addSizeMid: $startSize - $midSize;
@@ -83,4 +131,7 @@
   padding: 0;
   list-style: none;
 }
+
+// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
+// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
 

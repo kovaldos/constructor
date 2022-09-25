@@ -35,13 +35,13 @@
       width: auto;
     }
 
-    @include viewport--1279 {
+    @include vp-1279 {
       .services__text {
         margin: 0;
       }
     }
 
-    @include viewport--767 {
+    @include vp-767 {
       .services__title {
         grid-column: auto;
         margin: 0;
@@ -79,7 +79,7 @@
       height: fit-content;
     }
 
-    @include viewport--1279 {
+    @include vp-1279 {
       .services__wrapper {
         grid-template-rows: auto;
       }
@@ -101,7 +101,7 @@
       }
     }
 
-    @include viewport--767 {
+    @include vp-767 {
       .services__cards {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 15px;
@@ -116,7 +116,7 @@
   grid-template-rows: repeat(2, 1fr);
   column-gap: 30px;
 
-  @include viewport--1279 {
+  @include vp-1279 {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
@@ -126,7 +126,7 @@
   order: 0;
   height: fit-content;
 
-  @include viewport--1279 {
+  @include vp-1279 {
     margin-bottom: 20px;
   }
 }
@@ -142,12 +142,12 @@
   order: 2;
   height: fit-content;
 
-  @include viewport--1279 {
+  @include vp-1279 {
     margin: 0 auto;
     margin-top: 30px;
   }
 
-  @include viewport--767 {
+  @include vp-767 {
     width: 100%;
   }
 }
@@ -160,11 +160,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 
-  @include viewport--1023 {
+  @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include viewport--767 {
+  @include vp-767 {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
@@ -172,11 +172,11 @@
 .services__card.card {
   width: auto;
   
-  @include viewport--1279 {
+  @include vp-1279 {
     margin: 0 auto;
   }
 
-  @include viewport--767 {
+  @include vp-767 {
     width: 100%;
   }
 }

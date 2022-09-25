@@ -5,13 +5,13 @@
     grid-template-columns: 1fr 1.5fr;
     overflow: hidden;
 
-    @include viewport--767 {
+    @include vp-767 {
       grid-template-columns: auto
     }
   }
 
   .modal__close-btn {
-    @include viewport--767 {
+    @include vp-767 {
       filter: invert(1);
     }
   }
@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
 
-    @include viewport--767 {
+    @include vp-767 {
       height: 200px;
     }
   }
@@ -29,7 +29,7 @@
   .modal__text {
     padding: 30px 50px;
 
-    @include viewport--767 {
+    @include vp-767 {
       padding: 30px 20px;
     }
   }

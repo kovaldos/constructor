@@ -1,0 +1,310 @@
+// При использовании удалить цифру в названии класса
+.header01 {
+	width: 100%;
+	min-height: $headerHeight;
+	background-color: $color-default-white;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 1px 5px rgba($color-default-black, 0.1);
+	@include vp-1023 {
+		min-height: $headerMobHeight;
+	}
+	&__wrapper {
+		width: 100%;
+		min-height: inherit;
+	}
+	&__container {
+		width: 100%;
+		min-height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		display: inline-flex;
+		align-items: center;
+		padding: 10px;
+		margin: -10px;
+		max-width: 220px;
+		width: 100%;
+		height: 60px;
+		@include vp-1279 {
+			max-width: 180px;
+		}
+		@include vp-1023 {
+			margin: 0 auto 0 25px;
+		}
+	}
+	&__btn {
+		min-width: unset;
+		border: 2px solid $color-ocean-green;
+		border-radius: 50px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: $color-ocean-green;
+		padding: 12px 20px;
+		margin: 0 5px;
+		&:hover {
+			border-color: $color-default-black;
+			color: $color-default-black;
+			background-color: $color-transparent;
+		}
+		@include vp-1279 {
+			padding: 12px;
+		}
+		@include vp-1023 {
+			border: 0;
+			&:hover {
+				box-shadow: none;
+				background-color: $color-transparent;
+			}
+		}
+		&-value {
+			&--desktop {
+				@include vp-1023 {
+					display: none;
+				}
+			}
+		}
+		&-icon {
+			&--mobile {
+				display: none;
+				@include vp-1023 {
+					display: block;
+				}
+			}
+		}
+	}
+	&__icons {
+		width: 100%;
+		max-width: 150px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		// margin: -15px;
+		svg {
+			color: $color-default-black;
+			transition: color $default-transition-settings;
+		}
+	}
+	&__search-btn {
+		padding: 15px;
+		&:hover {
+			svg {
+				color: $color-jade;
+			}
+		}
+	}
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		position: relative;
+		&:hover {
+			svg {
+				color: $color-jade;
+			}
+		}
+	}
+	&__cart-counter {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		border-radius: 50%;
+		font-size: 15px;
+		color: $color-ocean-green;
+		border: 1px solid $color-ocean-green;
+	}
+
+	.main-nav {
+		min-height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		&__sub-menu {
+			position: absolute;
+			top: $headerHeight;
+			left: -60px;
+			padding: 30px;
+			box-shadow: 1px 3px 4px 4px rgba($color-default-black, 0.1);
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+			z-index: 10;
+			background-color: $color-default-white;
+			transition: all $default-transition-settings;
+			@include vp-1024 {
+				&.is-active {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: all;
+				}
+			}
+			&-cols {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				@include adaptiveDesktopToMobile("grid-column-gap", 50, 25);
+			}
+			&-list {
+				@include reset-list;
+				&-item {
+					margin: -5px;
+				}
+			}
+			&-link {
+				display: block;
+				font-size: 14px;
+				line-height: 17px;
+				color: $color-dim-gray;
+				padding: 5px;
+				margin-bottom: 5px;
+				&.link--title {
+					font-size: 18px;
+					line-height: 22px;
+					color: $color-default-black;
+					margin-bottom: 10px;
+				}
+				&:hover {
+					color: $color-jade;
+				}
+			}
+		}
+		@include vp-1023 {
+			order: -1;
+			margin-left: -15px;
+		}
+		&__wrapper {
+			@include vp-1023 {
+				position: absolute;
+				top: $headerMobHeight;
+				@include adaptiveDesktopToMobile("left", -40, -20);
+				width: 50vw;
+				height: 50vh;
+				background-color: #fff;
+				z-index: 10;
+				border-bottom-right-radius: 10px;
+				box-shadow: 0 5px 4px 5px rgba($color-default-black, 0.1);
+				transition: all $default-transition-settings;
+				transform: translateX(-120%);
+			}
+			&.is-active {
+				transform: translateX(0);
+			}
+		}
+		&__toggle {
+			&-box {
+				display: flex;
+				align-items: center;
+			}
+			display: inline-flex;
+			position: relative;
+			width: 48px;
+			height: 48px;
+			flex-direction: column;
+			justify-content: space-between;
+			background-color: $color-transparent;
+			border: none;
+			padding: 13px 9px 12px 9px;
+			margin: 0;
+			&-strip {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 9px;
+				right: 0;
+				width: calc(100% - 2 * 9px);
+				height: 3px;
+				background-color: $color-jade;
+				transition: all $default-transition-settings;
+				@include vp-1023 {
+					left: 12px;
+					width: calc(100% - 2 * 12px);
+				}
+				&--top {
+					top: 13px;
+					@include vp-1023 {
+						top: 16px;
+					}
+				}
+				&--middle {
+					top: 50%;
+					transform: translateY(-1px);
+				}
+				&--bottom {
+					top: auto;
+					bottom: 12px;
+					@include vp-1023 {
+						bottom: 14px;
+					}
+				}
+			}
+			&.is-active {
+				.main-nav__toggle-strip {
+					&--middle {
+						transform: translate(0, -50%) scale(0);
+					}
+					&--top {
+						transform: rotate(-45deg);
+						top: 23px;
+					}
+					&--bottom {
+						transform: rotate(45deg);
+						bottom: 22px;
+					}
+				}
+			}
+			@include vp-1023 {
+				transform: translateX(8px);
+			}
+		}
+		&__list {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			list-style: none;
+		}
+		&__item {
+			margin: 0;
+		}
+		&__link,
+		&__menu-calling {
+			color: $color-default-black;
+			padding: 20px;
+			margin: 0;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+			&:hover {
+				color: $color-jade;
+			}
+			@include vp-1279 {
+				padding: 15px;
+			}
+		}
+		&__menu-calling {
+			display: none;
+			@include vp-1024 {
+				display: initial;
+				cursor: pointer;
+				// &:hover + {
+				// 	.main-nav__sub-menu {
+				// 		opacity: 1;
+				// 		visibility: visible;
+				// 		pointer-events: all;
+				// 	}
+				// }
+			}
+		}
+	}
+}

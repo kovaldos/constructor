@@ -7,55 +7,130 @@
 	<body>
 		<div style="display: none">@@include("build/img/sprite_auto.svg")</div>
 		<!-- Шапка Версия 1 - начало -  -->
-		<header class="header header--version01">
-			<div class="header__wrapper">
-				<div class="container header__container">
-					<a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
+		<!-- При использовании удалить цифру в названии класса  -->
+		<header class="header01">
+			<div class="header01__wrapper">
+				<div class="container header01__container">
+					<a class="header01__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
 						<img src="img/svg/logo-ver01.svg" alt="Логотип компании">
 					</a>
 					<nav class="main-nav">
-						<button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-						<svg width="25" height="17">
-							<use xlink:href="#icon-burger-menu"></use>
-						</svg>
-						</button>
-						<div class="main-nav__wrapper">
+						<div class="main-nav__toggle-box">
+							<button class="button button--reset main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-toggle="burger-menu-toggle"><span class="main-nav__toggle-strip main-nav__toggle-strip--top"></span><span class="main-nav__toggle-strip main-nav__toggle-strip--middle"></span><span class="main-nav__toggle-strip main-nav__toggle-strip--bottom"></span></button>
+							<span class="main-nav__menu-calling" data-toggle="burger-menu-toggle">Меню</span>
+						</div>
+						<div class="main-nav__wrapper" data-burger-menu="burger-menu-body">
 							<ul class="main-nav__list">
 								<li class="main-nav__item">
-								<a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Меню</a>
+								<a class="link main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Каталог</a>
 								</li>
 								<li class="main-nav__item">
-								<a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Каталог</a>
+								<a class="link main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Услуги</a>
 								</li>
 								<li class="main-nav__item">
-								<a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Услуги</a>
+								<a class="link main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#" }>Проекты</a>
 								</li>
 								<li class="main-nav__item">
-								<a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#" }>Проекты</a>
-								</li>
-								<li class="main-nav__item">
-								<a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 4) { href="#" }>Контакты</a>
+								<a class="link main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 4) { href="#" }>Контакты</a>
 								</li>
 							</ul>
 						</div>
+						<div class="main-nav__sub-menu" data-menu="sub-menu">
+							<div class="main-nav__sub-menu-cols">
+								<div class="main-nav__sub-menu-col col-01">
+									<ul class="main-nav__sub-menu-list">
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title main-nav__sub-menu-link">Компания</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">О компании</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">История</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Партнеры</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Лицензии</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Сотрудники</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Отзывы</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Вакансии</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Реквизиты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="main-nav__sub-menu-col col-02">
+									<ul class="main-nav__sub-menu-list">
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title  main-nav__sub-menu-link">Информация</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Акции</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Новости</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Статьи</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link main-nav__sub-menu-link">Вопрос-ответ</a>
+										</li>
+									</ul>
+								</div>
+								<div class="main-nav__sub-menu-col col-03">
+									<ul class="main-nav__sub-menu-list">
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title main-nav__sub-menu-link">Каталог</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title main-nav__sub-menu-link">Услуги</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title main-nav__sub-menu-link">Проекты</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title main-nav__sub-menu-link">Курсы</a>
+										</li>
+										<li class="main-nav__sub-menu-list-item">
+											<a href="#" class="link link--title main-nav__sub-menu-link">Контакты</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</nav>
-					<button type="button" data-modal="feedback" class="header__btn button button--stroke">Заказать звонок</button>
-					<div class="header__icons">
-						<button type="button" class="header__search-btn btn-reset">
+					<button type="button" data-modal="feedback" class="header01__btn button button--stroke">
+						<svg class="header01__btn-icon header01__btn-icon--mobile" width="20" height="20">
+							<use xlink:href="#icon-phone-stroke"></use>
+						</svg>
+						<span class="header01__btn-value header01__btn-value--desktop">Заказать звонок</span>
+					</button>
+					<div class="header01__icons">
+						<button type="button" class="header01__search-btn button button--reset">
 							<svg width="20" height="20">
 								<use xlink:href="#icon-search"></use>
 							</svg>
 						</button>
-						<a href="#" class="header__link link-to-user">
+						<a href="#" class="header01__link link-to-user">
 							<svg width="20" height="20">
 								<use xlink:href="#icon-user-circle"></use>
 							</svg>
 						</a>
-						<a href="cart.html" class="header__link link-to-cart">
+						<a href="cart.html" class="header01__link link-to-cart">
 							<svg width="20" height="20">
 								<use xlink:href="#icon-shopping-cart"></use>
 							</svg>
-							<span class="header__cart-counter">5</span>
+							<span class="header01__cart-counter">5</span>
 						</a>	
 						</div>
 				</div>

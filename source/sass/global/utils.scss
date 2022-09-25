@@ -39,18 +39,13 @@
   }
 }
 
-.scroll-lock {
+.scroll-lock-ios {
   position: fixed;
-
-  overflow-y: auto;
+  overflow: hidden;
 }
 
-.btn-reset {
-  padding: 0;
-
-  background: transparent;
-  border: none;
-  cursor: pointer;
+.scroll-lock {
+  overflow: hidden;
 }
 
 @keyframes disableBreakpointAnimation {
